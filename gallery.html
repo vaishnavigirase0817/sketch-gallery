@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Sketch Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <header>
+    <h1>🎨  Sketch Gallery</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#drawing-list">Gallery</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to My Art World</h2>
+    <p>Explore my latest sketches and share your creativity.</p>
+    <button onclick="document.querySelector('#drawing-list').scrollIntoView({behavior: 'smooth'})">
+      View Gallery
+    </button>
+  </section>
+
+  <section class="upload-section">
+    <h3>Upload Your Art</h3>
+    <input type="file" id="uploadInput" accept="image/*" />
+    <input type="text" id="titleInput" placeholder="Enter Art Title" />
+    <button onclick="uploadArt()">Upload</button>
+  </section>
+
+  <section class="gallery" id="drawing-list"></section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>I’m a web developer who created this demo portfolio to showcase HTML, CSS, and JavaScript skills. All images are for sample purposes.</p>
+  </section>
+
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>Email: myart@example.com</p>
+    <p>Instagram: @myartpage</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Art Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

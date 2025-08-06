@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Art Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <h2>Login to View Portfolio</h2>
+    <form onsubmit="return handleLogin(event)">
+      <input type="text" id="username" placeholder="Enter Username" required />
+      <input type="password" id="password" placeholder="Enter Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <p class="login-note">Hint: Username: <b>artist</b> | Password: <b>1234</b></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
